@@ -1,0 +1,18 @@
+<h2>Alta Cliente</h2>
+<div>
+    Nombre:<input type="text" [(ngModel)]="nombre">
+    <br>
+    CIF:<input type="text" [(ngModel)]="cif">
+    <br>
+    Dirección:<input type="text" [(ngModel)]="direccion">
+    <br>
+    Grupo:<select [(ngModel)]="grupo">
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+    <br>
+  <button (click)="guardar()">Guardar</button>
+
+  <app-listado [datos]="clientes"></app-listado>
+</div>
+<router-outlet></router-outlet>
